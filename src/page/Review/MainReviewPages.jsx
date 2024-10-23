@@ -103,7 +103,6 @@ function MainReviewPages() {
             <GreenContainer>
               <FontAwesomeIcon icon={faUtensils} size="2x" />
             </GreenContainer>
-
             <CategoriesGridContainer>
               <CategoriesGrid>
                 {categories.map((category, index) => (

@@ -13,7 +13,6 @@ function Main() {
   return (
     <MainContainer>
       <Main1 />
-
       <Main2 />
     </MainContainer>
   );

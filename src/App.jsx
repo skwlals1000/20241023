@@ -17,8 +17,9 @@ import ServiceFoods from "./components/ServiceFoods";
 import Mypage from "./components/User/Mypage";
 import ResetPasswordPage from "./components/User/ResetPassword";
 import { useRecoilState } from "recoil";
-import { authState } from "./state/userAtoms"; // Import the Recoil state
+import { authState } from "./state/userAtoms"; 
 import TopNav from "./components/TopNav";
+import RestaurantPost from "./page/Restaurant/RestaurantPost";
 
 function App() {
   const [isAuthenticated, setAuth] = useRecoilState(authState);
@@ -81,6 +82,7 @@ function App() {
         <Route path="/Post/:postId" element={<DetailPostPageHN />} />
         <Route path="/mypage" element={<MypageHN />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path="/Restraunt/:RestrantPost" element={<RestaurantPostHN />} />
       </Routes>
       <TopNav />
     </BrowserRouter>
@@ -161,5 +163,13 @@ const MypageHN = () => (
     <Mypage />
   </div>
 );
+
+const RestaurantPostHN = () => (
+  <div>
+    <Header />
+    <RestaurantPost/> 
+  </div>
+);
+
 
 export default App;
