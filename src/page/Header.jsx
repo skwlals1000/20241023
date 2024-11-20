@@ -174,7 +174,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(#b6b654, #e7e78b);
+  background: #e7e78b;
 `;
 
 const LogoContainer = styled(Link)`

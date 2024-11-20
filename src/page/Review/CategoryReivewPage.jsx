@@ -219,6 +219,7 @@ const H2 = styled.h2`
     font-family: "GowunDodum-Regular";
   }
 `;
+
 const DeviceFrameWrapper = styled.div`
   width: 100%;
   max-width: 600px; /* 기본 최대 너비 설정 */
@@ -235,6 +236,7 @@ const DeviceFrameWrapper = styled.div`
     width: 95%; /* 작은 화면에서 너비 조정 */
   }
 `;
+
 const CenteredContainer = styled.div`
   display: flex;
   justify-content: center;

@@ -30,7 +30,7 @@ const TopNav = () => {
           <FontAwesomeIcon icon={faCog} />
           <span>설문조사</span>
         </NavItem>
-        <NavItem to="/profile">
+        <NavItem to="/mypage">
           <FontAwesomeIcon icon={faUser} />
           <span>프로필</span>
         </NavItem>
@@ -55,6 +55,12 @@ const TopNavContainer = styled.div`
   border-top: 1px solid #e0e0e0; /* 상단 테두리 */
   z-index: 1000;
 
+  /* PC 화면일 때 숨기기 */
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+
+  /* 모바일 화면 */
   @media screen and (max-width: 768px) {
     justify-content: space-between; /* 모바일에서 아이템 간의 간격 조정 */
     padding: 0 10px; /* 모바일 레이아웃에 여백 추가 */

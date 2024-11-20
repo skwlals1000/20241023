@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Main1Container = styled.div`
-  background: linear-gradient(#e7e78b, #f0f0c3);
+  background: #e7e78b;
   color: white;
   padding: 20px;
 `;
 const PageContainer = styled.div`
-  background: linear-gradient(#e7e78b, #f0f0c3); /* 변경된 부분 */
+  background: #e7e78b; /* 변경된 부분 */
 `;
 const HomeHeader = styled.div`
   flex-direction: row;

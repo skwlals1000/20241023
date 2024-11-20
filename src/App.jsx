@@ -20,6 +20,9 @@ import { useRecoilState } from "recoil";
 import { authState } from "./state/userAtoms"; 
 import TopNav from "./components/TopNav";
 import RestaurantPost from "./page/Restaurant/RestaurantPost";
+import FavoritesPage from "./components/User/FavoritesPage";
+import ProfileEdit from "./components/User/ProfileEdit";
+import MyReviewList from "./components/User/MyReviewList";
 
 function App() {
   const [isAuthenticated, setAuth] = useRecoilState(authState);
@@ -83,6 +86,9 @@ function App() {
         <Route path="/mypage" element={<MypageHN />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/Restraunt/:RestrantPost" element={<RestaurantPostHN />} />
+        <Route path="/favorites" element={<FavoritesPageHN />} />
+        <Route path="/ProfileEdit" element={<ProfileEditHN />} />
+        <Route path="/MyReviewList" element={<MyReviewListHN />} />
       </Routes>
       <TopNav />
     </BrowserRouter>
@@ -166,8 +172,27 @@ const MypageHN = () => (
 
 const RestaurantPostHN = () => (
   <div>
-    <Header />
+
     <RestaurantPost/> 
+  </div>
+);
+
+
+const FavoritesPageHN = () => (
+  <div>
+    <FavoritesPage/> 
+  </div>
+);
+
+const ProfileEditHN = () => (
+  <div>
+    <ProfileEdit/> 
+  </div>
+);
+
+const MyReviewListHN = () => (
+  <div>
+    <MyReviewList/> 
   </div>
 );
 
